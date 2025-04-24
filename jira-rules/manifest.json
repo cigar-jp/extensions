@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Rules",
+  "version": "1.0",
+  "description": "Displays Jira rules in a popup.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}
