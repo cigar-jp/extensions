@@ -19,16 +19,42 @@
       li {
         display: flex;
         align-items: center;
-        margin: 0.5em 0;
+        margin: 1em 0;
       }
       li img {
         width: 2em;
         height: 2em;
         margin-right: 0.5em;
+        aspect-ratio: 1/1;
+        object-fit: cover;
       }
       .icon-list li {
         display: block;
         align-items: baseline;
+      }
+      .color-box {
+        width: 1.5em;
+        aspect-ratio: 1/1;
+        border-radius: 4px;
+        margin-right: 0.5em;
+      }
+      .box-0 {
+        background-color: #c9372c;
+      }
+      .box-1 {
+        background-color: #c97cf4;
+      }
+      .box-2 {
+        background-color: #eed12b;
+      }
+      .box-3 {
+        background-color: #669df1;
+      }
+      .box-4 {
+        background-color: #f87168;
+      }
+      .box-5 {
+        background-color: #8c8f97;
       }
     </style>
   </head>
@@ -48,50 +74,37 @@
     <h2>エピックのステータス</h2>
     <ul class="status-list">
       <li>
-        <img
-          src="images/image.png"
-          alt="Readyでない"
-        />エピックがReadyでない状態：Readyになったら、CSが色を紫に変更する
+        <div class="color-box box-0"></div>
+        エピックがReadyでない状態：Readyになったら、CSが色を紫に変更する
       </li>
       <li>
-        <img
-          src="images/image 1.png"
-          alt="リファインメント待ち"
-        />リファインメント待ち：リファインメントが完了したら、Techが色を青に変更する
+        <div class="color-box box-1"></div>
+        リファインメント待ち：リファインメントが完了したら、Techが色を青に変更する
       </li>
       <li>
-        <img
-          src="images/image 2.png"
-          alt="調査が必要"
-        />調査が必要な状態：調査が完了したら実装チケットを作成し、Techが色を青に変更する
+        <div class="color-box box-2"></div>
+        調査が必要な状態：調査が完了したら実装チケットを作成し、Techが色を青に変更する
       </li>
       <li>
-        <img
-          src="images/image 3.png"
-          alt="実装中"
-        />実装できる状態／実装中／実装完了
+        <div class="color-box box-3"></div>
+        実装できる状態 / 実装中 / 実装完了
       </li>
     </ul>
 
     <h2>その他</h2>
     <ul class="other-list">
       <li>
-        <img src="images/image 4.png" alt="緊急対応" />緊急対応：最優先で対応中
+        <div class="color-box box-0"></div>
+        緊急対応：最優先で対応中
       </li>
       <li>
-        <img
-          src="images/image 5.png"
-          alt="QA不具合"
-        />QA／内部検証で検出した既存不具合
+        <div class="color-box box-4"></div>
+        QA / 内部検証で検出した既存不具合
       </li>
       <li>
-        <img src="images/Untitled 1.png" alt="調査意見箱" />調査意見箱・CS要望
-      </li>
-      <li>
-        <img
-          src="images/Untitled.png"
-          alt="STP確保"
-        />スプリントTODOタスクとして、リファインメント分のSTPを確保している
+        <div class="color-box box-5"></div>
+        調査意見箱 / CS要望 /
+        スプリントTODOタスクとして、リファインメント分のSTPを確保している
       </li>
     </ul>
   </body>
