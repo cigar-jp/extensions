@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>アイコンの凡例とステータス</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2em;
+        width: 36rem;
+        line-height: 1.5;
+      }
+      h2 {
+        margin-top: 1.5em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+      }
+      li img {
+        width: 2em;
+        height: 2em;
+        margin-right: 0.5em;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .icon-list li {
+        display: block;
+        align-items: baseline;
+      }
+      .color-box {
+        width: 1.5em;
+        aspect-ratio: 1/1;
+        border-radius: 4px;
+        margin-right: 0.5em;
+      }
+      .box-0 {
+        background-color: #c9372c;
+      }
+      .box-1 {
+        background-color: #c97cf4;
+      }
+      .box-2 {
+        background-color: #eed12b;
+      }
+      .box-3 {
+        background-color: #669df1;
+      }
+      .box-4 {
+        background-color: #f87168;
+      }
+      .box-5 {
+        background-color: #8c8f97;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>アイコンの凡例</h2>
+    <ul class="icon-list">
+      <li><strong>🈂️: 差し込み</strong></li>
+      <li><strong>📅: 日付の指定があるもの</strong></li>
+      <li>
+        <strong
+          >🔜:
+          次のスプリントで取り掛かるので今スプリントでリファインメントしよう</strong
+        >
+      </li>
+    </ul>
+
+    <h2>エピックのステータス</h2>
+    <ul class="status-list">
+      <li>
+        <div class="color-box box-0"></div>
+        エピックがReadyでない状態：Readyになったら、CSが色を紫に変更する
+      </li>
+      <li>
+        <div class="color-box box-1"></div>
+        リファインメント待ち：リファインメントが完了したら、Techが色を青に変更する
+      </li>
+      <li>
+        <div class="color-box box-2"></div>
+        調査が必要な状態：調査が完了したら実装チケットを作成し、Techが色を青に変更する
+      </li>
+      <li>
+        <div class="color-box box-3"></div>
+        実装できる状態 / 実装中 / 実装完了
+      </li>
+    </ul>
+
+    <h2>その他</h2>
+    <ul class="other-list">
+      <li>
+        <div class="color-box box-0"></div>
+        緊急対応：最優先で対応中
+      </li>
+      <li>
+        <div class="color-box box-4"></div>
+        QA / 内部検証で検出した既存不具合
+      </li>
+      <li>
+        <div class="color-box box-5"></div>
+        調査意見箱 / CS要望 /
+        スプリントTODOタスクとして、リファインメント分のSTPを確保している
+      </li>
+    </ul>
+  </body>
+</html>
